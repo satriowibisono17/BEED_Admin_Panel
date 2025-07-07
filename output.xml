@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.1 (Python 3.13.5 on win32)" generated="2025-07-07T15:17:36.283790" rpa="false" schemaversion="5">
+<suite id="s1" name="Search admin panel" source="C:\Users\user\PycharmProjects\LMSAutomation\TestCases\Admin_Panel\Search_admin_panel.robot">
+<test id="s1-t1" name="ViewPageAdminPanel" line="10">
+<kw name="LoginToApplication">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-07T15:17:36.588184" level="INFO">Opening browser 'chrome' to base url 'https://test3-fairview.beed.world/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-07T15:17:36.587954" elapsed="1.898867"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-07T15:17:38.487036" elapsed="0.591740"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-07T15:17:41.080421" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-07T15:17:39.079337" elapsed="2.001203"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-07T15:17:41.081027" level="INFO">Clicking element 'xpath=//*[@id="Username"]'.</msg>
+<arg>xpath=//*[@id="Username"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-07T15:17:41.080702" elapsed="0.065517"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-07T15:17:41.146549" level="INFO">Typing text 'satrio.wicaksono17@sharklasers.com' into text field 'xpath=//*[@id="Username"]'.</msg>
+<arg>xpath=//*[@id="Username"]</arg>
+<arg>satrio.wicaksono17@sharklasers.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-07T15:17:41.146373" elapsed="0.082422"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-07T15:17:41.229124" level="INFO">Clicking element 'xpath=//*[@id="Password"]'.</msg>
+<arg>xpath=//*[@id="Password"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-07T15:17:41.228952" elapsed="0.047637"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-07T15:17:41.276921" level="INFO">Typing text 'Password123*' into text field 'xpath=//*[@id="Password"]'.</msg>
+<arg>xpath=//*[@id="Password"]</arg>
+<arg>Password123*</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-07T15:17:41.276744" elapsed="0.051420"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-07T15:17:41.328489" level="INFO">Clicking element 'xpath=/html/body/section/div/div/div[2]/div/div/div/div/div[2]/div/div/div/form/fieldset/div[3]/button'.</msg>
+<arg>xpath=/html/body/section/div/div/div[2]/div/div/div/div/div[2]/div/div/div/form/fieldset/div[3]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-07T15:17:41.328322" elapsed="0.047643"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-07T15:17:44.376407" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-07T15:17:41.376132" elapsed="3.000432"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-07T15:17:44.391119" level="INFO">Current page contains text 'Please choose the module to start your work'.</msg>
+<arg>Please choose the module to start your work</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-07-07T15:17:44.376801" elapsed="0.014443"/>
+</kw>
+<status status="PASS" start="2025-07-07T15:17:36.587268" elapsed="7.804132"/>
+</kw>
+<kw name="AdminPanel">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-07T15:17:44.392161" level="INFO">Clicking element 'xpath=//html/body/app-diary/app-entry/div/div/div[3]/div[3]'.</msg>
+<arg>xpath=//html/body/app-diary/app-entry/div/div/div[3]/div[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-07T15:17:44.392005" elapsed="0.496788"/>
+</kw>
+<status status="PASS" start="2025-07-07T15:17:44.391755" elapsed="0.497146"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-07T15:17:47.889654" level="INFO">Slept 3 seconds.</msg>
+<arg>3 s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-07T15:17:44.889136" elapsed="3.000666"/>
+</kw>
+<kw name="SearchAdminPanel">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-07T15:17:47.890561" level="INFO">Clicking element 'xpath=//*[@id="mat-input-0"]'.</msg>
+<arg>xpath=//*[@id="mat-input-0"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-07T15:17:47.890419" elapsed="0.060369"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-07T15:17:47.951101" level="INFO">Typing text 'Snowy' into text field 'xpath=//*[@id="mat-input-0"]'.</msg>
+<arg>xpath=//*[@id="mat-input-0"]</arg>
+<arg>Snowy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-07T15:17:47.950936" elapsed="0.055075"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-07T15:17:48.006357" level="INFO">Clicking element 'xpath=/html/body/app-root/app-layout/beed-side-bar/mat-sidenav-container/mat-sidenav-content/div/app-dashboard/div[1]/div/div/div[1]/button'.</msg>
+<arg>xpath=/html/body/app-root/app-layout/beed-side-bar/mat-sidenav-container/mat-sidenav-content/div/app-dashboard/div[1]/div/div/div[1]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-07T15:17:48.006181" elapsed="0.067033"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-07-07T15:17:48.265807" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-07-07T15:17:48.265963" level="FAIL">Page should have contained text 'users found' but did not.</msg>
+<arg>users found</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2025-07-07T15:17:48.073382" elapsed="0.194631">Page should have contained text 'users found' but did not.</status>
+</kw>
+<status status="FAIL" start="2025-07-07T15:17:47.890193" elapsed="0.377989">Page should have contained text 'users found' but did not.</status>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2025-07-07T15:17:48.268454" elapsed="0.000039"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-07-07T15:17:48.268682" elapsed="0.000028"/>
+</kw>
+<status status="FAIL" start="2025-07-07T15:17:36.586346" elapsed="11.682581">Page should have contained text 'users found' but did not.</status>
+</test>
+<status status="FAIL" start="2025-07-07T15:17:36.285379" elapsed="11.984105"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Search admin panel" id="s1" pass="0" fail="1" skip="0">Search admin panel</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
