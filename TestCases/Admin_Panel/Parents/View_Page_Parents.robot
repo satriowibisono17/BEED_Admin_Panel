@@ -11,8 +11,9 @@ ViewPageAdminPanel
     LoginToApplication
     AdminPanel
     sleep    3 s
+    View_Parents
     Capture Page Screenshot
-    Close Browser
+
 
 
 *** Keywords ***
@@ -31,3 +32,7 @@ LoginToApplication
 AdminPanel
     Click Element   xpath=//html/body/app-diary/app-entry/div/div/div[3]/div[3]
 
+View_Parents
+    Click Element  xpath=//html/body/app-root/app-layout/beed-side-bar/mat-sidenav-container/mat-sidenav/div/div[2]/div[3]
+    sleep    3s
+    Page Should Contain     Parents

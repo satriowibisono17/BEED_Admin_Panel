@@ -5,12 +5,18 @@ Library    SeleniumLibrary
 *** Variables ***
 ${browser}    chrome
 ${url}        https://test3-fairview.beed.world/
+${FILE_PATH}      C:\\Users\\user\\Downloads\\list_of_parents.xlsx
+${INPUT_LOCATOR}  xpath=//[@id="fileReader"]
+${SUBMIT_BUTTON}  xpath=//button[@type='submit'
 
 *** Test Cases ***
 ViewPageAdminPanel
     LoginToApplication
     AdminPanel
     sleep    3 s
+    View_Parents
+    Import Parents
+    sleep    2s
     Capture Page Screenshot
     Close Browser
 
@@ -26,8 +32,16 @@ LoginToApplication
     Input Text      xpath=//*[@id="Password"]   Satrio99_
     Click Element    xpath=/html/body/section/div/div/div[2]/div/div/div/div/div[2]/div/div/div/form/fieldset/div[3]/button
     sleep    3s
-    Page Should Contain	   Please choose the module to start your work
+
 
 AdminPanel
     Click Element   xpath=//html/body/app-diary/app-entry/div/div/div[3]/div[3]
 
+View_Parents
+    Click Element  xpath=//html/body/app-root/app-layout/beed-side-bar/mat-sidenav-container/mat-sidenav/div/div[2]/div[3]
+    sleep    3s
+
+Import Parents
+    Click Element   xpath=/html/body/app-root/app-layout/beed-side-bar/mat-sidenav-container/mat-sidenav-content/div/beed-parent-list/mat-card/mat-card-content/div/div[1]/div/button[2]/span[1]
+    sleep    2s
+    choose file     ${INPUT_LOCATOR}    ${FILE_PATH}
