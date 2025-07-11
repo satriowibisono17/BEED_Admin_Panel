@@ -5,7 +5,7 @@ Library    SeleniumLibrary
 *** Variables ***
 ${browser}    chrome
 ${url}        https://test3-fairview.beed.world/
-${FILE_PATH}      C://Users//user//Downloads//list_of_parents.xlsx
+${FILE_PATH}      C://Users//user//Downloads//Test_File_failed.xlsx
 ${INPUT_LOCATOR}  xpath=//[@id=fileReader]
 ${SUBMIT_BUTTON}  xpath=//button[@type='submit'
 
@@ -35,13 +35,13 @@ LoginToApplication
 
 
 AdminPanel
-    Click Element   xpath=//*[contains(text(), 'Admin panel ')]
+    Click Element   xpath=//*[contains(text(), 'Admin panel')]
 
 View_Parents
     Click Element  xpath=//html/body/app-root/app-layout/beed-side-bar/mat-sidenav-container/mat-sidenav/div/div[2]/div[3]
     sleep    3s
 
 Import Parents
-    click element   xpath=/html/body/app-root/app-layout/beed-side-bar/mat-sidenav-container/mat-sidenav-content/div/beed-parent-list/mat-card/mat-card-content/div/div[1]/div/button[2]
-    Choose File    xpath=//input[@id='fileReader']    ${FILE_PATH}
-    click element  xpath=////*[@id="mat-mdc-dialog-1"]/div/div/beed-import-modal/mat-dialog-actions/button[3]
+    click element                    xpath=//*[contains(text(), 'IMPORT PARENTS')]
+    Choose File                      xpath=//input[@id='fileReader']    ${FILE_PATH}
+    Click Element                    xpath=//*[@id="mat-mdc-dialog-0"]/div/div/beed-import-modal/mat-dialog-actions/button[3]

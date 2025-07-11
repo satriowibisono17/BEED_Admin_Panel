@@ -5,17 +5,13 @@ Library    SeleniumLibrary
 *** Variables ***
 ${browser}    chrome
 ${url}        https://test3-fairview.beed.world/
-${FILE_PATH}      C://Users//user//Downloads//list_of_parents.xlsx
-${INPUT_LOCATOR}  xpath=//[@id=fileReader]
-${SUBMIT_BUTTON}  xpath=//button[@type='submit'
-
 *** Test Cases ***
 ViewPageAdminPanel
     LoginToApplication
     AdminPanel
     sleep    3 s
     View_Parents
-    Import Parents
+    Download Template Import Parents
     sleep    2s
     Capture Page Screenshot
     Close Browser
@@ -35,13 +31,12 @@ LoginToApplication
 
 
 AdminPanel
-    Click Element   xpath=//*[contains(text(), 'Admin panel ')]
+    Click Element   xpath=//html/body/app-diary/app-entry/div/div/div[3]/div[3]
 
 View_Parents
     Click Element  xpath=//html/body/app-root/app-layout/beed-side-bar/mat-sidenav-container/mat-sidenav/div/div[2]/div[3]
     sleep    3s
 
-Import Parents
-    click element   xpath=/html/body/app-root/app-layout/beed-side-bar/mat-sidenav-container/mat-sidenav-content/div/beed-parent-list/mat-card/mat-card-content/div/div[1]/div/button[2]
-    Choose File    xpath=//input[@id='fileReader']    ${FILE_PATH}
-    click element  xpath=////*[@id="mat-mdc-dialog-1"]/div/div/beed-import-modal/mat-dialog-actions/button[3]
+Download Template Import Parents
+    click element  xpath=//*[contains(text(), 'IMPORT PARENTS')]
+    Click Element    xpath=//*[contains(text(), 'DOWNLOAD EXAMPLE')]
