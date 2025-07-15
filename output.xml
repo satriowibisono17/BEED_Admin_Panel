@@ -1,255 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.1 (Python 3.13.5 on win32)" generated="2025-07-11T15:41:44.003191" rpa="false" schemaversion="5">
-<suite id="s1" name="Create Parents" source="C:\Users\user\PycharmProjects\LMSAutomation\TestCases\Admin_Panel\Parents\Create_Parents.robot">
-<test id="s1-t1" name="ViewPageAdminPanel" line="10">
+<robot generator="Robot 7.3.1 (Python 3.13.5 on win32)" generated="2025-07-15T16:38:34.312258" rpa="false" schemaversion="5">
+<suite id="s1" name="Create Educator" source="C:\Users\user\PycharmProjects\LMSAutomation\TestCases\Admin_Panel\Educator\Create_Educator.robot">
+<test id="s1-t1" name="ViewPageAdminPanel" line="9">
 <kw name="LoginToApplication">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-07-11T15:41:44.231169" level="INFO">Opening browser 'chrome' to base url 'https://test3-fairview.beed.world/'.</msg>
+<msg time="2025-07-15T16:38:34.531052" level="INFO">Opening browser 'chrome' to base url 'https://test3-fairview.beed.world/'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-07-11T15:41:44.230961" elapsed="2.788966"/>
+<status status="PASS" start="2025-07-15T16:38:34.530838" elapsed="4.920630"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-07-11T15:41:47.020129" elapsed="0.427095"/>
+<status status="PASS" start="2025-07-15T16:38:39.451865" elapsed="0.049456"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-07-11T15:41:49.447873" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-07-15T16:38:41.502876" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-07-11T15:41:47.447451" elapsed="2.000579"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-07-11T15:41:49.448678" level="INFO">Clicking element 'xpath=//*[@id="Username"]'.</msg>
-<arg>xpath=//*[@id="Username"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-11T15:41:49.448243" elapsed="0.062103"/>
+<status status="PASS" start="2025-07-15T16:38:39.501749" elapsed="2.001268"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-07-11T15:41:49.510686" level="INFO">Typing text 'satrio.wicaksono17@sharklasers.com' into text field 'xpath=//*[@id="Username"]'.</msg>
+<msg time="2025-07-15T16:38:41.503708" level="INFO">Typing text 'satrio.wicaksono17@sharklasers.com' into text field 'xpath=//*[@id="Username"]'.</msg>
 <arg>xpath=//*[@id="Username"]</arg>
 <arg>satrio.wicaksono17@sharklasers.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-11T15:41:49.510504" elapsed="0.077087"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-07-11T15:41:49.587944" level="INFO">Clicking element 'xpath=//*[@id="Password"]'.</msg>
-<arg>xpath=//*[@id="Password"]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-11T15:41:49.587764" elapsed="0.043043"/>
+<status status="PASS" start="2025-07-15T16:38:41.503178" elapsed="0.097774"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-07-11T15:41:49.631224" level="INFO">Typing text 'Satrio99_' into text field 'xpath=//*[@id="Password"]'.</msg>
+<msg time="2025-07-15T16:38:41.601330" level="INFO">Typing text 'Satrio99_' into text field 'xpath=//*[@id="Password"]'.</msg>
 <arg>xpath=//*[@id="Password"]</arg>
 <arg>Satrio99_</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-11T15:41:49.631012" elapsed="0.045550"/>
+<status status="PASS" start="2025-07-15T16:38:41.601125" elapsed="0.087980"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-07-11T15:41:49.677015" level="INFO">Clicking element 'xpath=/html/body/section/div/div/div[2]/div/div/div/div/div[2]/div/div/div/form/fieldset/div[3]/button'.</msg>
-<arg>xpath=/html/body/section/div/div/div[2]/div/div/div/div/div[2]/div/div/div/form/fieldset/div[3]/button</arg>
+<msg time="2025-07-15T16:38:41.689439" level="INFO">Clicking element 'xpath=//button[contains(text(), 'Login')]'.</msg>
+<arg>xpath=//button[contains(text(), 'Login')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-11T15:41:49.676771" elapsed="0.243155"/>
+<status status="PASS" start="2025-07-15T16:38:41.689263" elapsed="0.052740"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-07-11T15:41:52.920885" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-07-15T16:38:44.742942" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-07-11T15:41:49.920127" elapsed="3.000914"/>
+<status status="PASS" start="2025-07-15T16:38:41.742218" elapsed="3.000925"/>
 </kw>
-<status status="PASS" start="2025-07-11T15:41:44.230380" elapsed="8.690824"/>
+<status status="PASS" start="2025-07-15T16:38:34.530228" elapsed="10.213103"/>
 </kw>
 <kw name="AdminPanel">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-07-11T15:41:52.922196" level="INFO">Clicking element 'xpath=//*[contains(text(), 'Admin panel')]'.</msg>
-<arg>xpath=//*[contains(text(), 'Admin panel')]</arg>
+<msg time="2025-07-15T16:38:44.744317" level="INFO">Clicking element 'xpath=//*[contains(text(),'Admin panel')]'.</msg>
+<arg>xpath=//*[contains(text(),'Admin panel')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-11T15:41:52.921978" elapsed="0.452933"/>
+<status status="PASS" start="2025-07-15T16:38:44.744045" elapsed="0.869312"/>
 </kw>
-<status status="PASS" start="2025-07-11T15:41:52.921630" elapsed="0.453386"/>
+<status status="PASS" start="2025-07-15T16:38:44.743695" elapsed="0.869812"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-07-11T15:41:56.375861" level="INFO">Slept 3 seconds.</msg>
-<arg>3 s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-07-11T15:41:53.375293" elapsed="3.000775"/>
-</kw>
-<kw name="View_Parents">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-07-11T15:41:56.377442" level="INFO">Clicking element 'xpath=//html/body/app-root/app-layout/beed-side-bar/mat-sidenav-container/mat-sidenav/div/div[2]/div[3]'.</msg>
-<arg>xpath=//html/body/app-root/app-layout/beed-side-bar/mat-sidenav-container/mat-sidenav/div/div[2]/div[3]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-11T15:41:56.377201" elapsed="0.056064"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-07-11T15:41:59.433977" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-07-15T16:38:48.614142" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-07-11T15:41:56.433434" elapsed="3.000654"/>
+<status status="PASS" start="2025-07-15T16:38:45.613810" elapsed="3.000445"/>
 </kw>
-<status status="PASS" start="2025-07-11T15:41:56.376701" elapsed="3.057486"/>
-</kw>
-<kw name="Create_Parents">
+<kw name="View_Page_educator">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-07-11T15:41:59.435182" level="INFO">Clicking element 'xpath=//*[contains(text(), 'CREATE PARENT')]'.</msg>
-<arg>xpath=//*[contains(text(), 'CREATE PARENT')]</arg>
+<msg time="2025-07-15T16:38:48.615177" level="INFO">Clicking element 'xpath=//a/span[contains(text(), 'Educator')]'.</msg>
+<arg>xpath=//a/span[contains(text(), 'Educator')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-11T15:41:59.435023" elapsed="0.105087"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-07-11T15:41:59.540439" level="INFO">Clicking element 'xpath=//input[@id='mat-input-2']'.</msg>
-<arg>xpath=//input[@id='mat-input-2']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-11T15:41:59.540274" elapsed="0.074722"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-07-11T15:41:59.615420" level="INFO">Typing text 'Jiwandoni' into text field 'xpath=//input[@id='mat-input-2']'.</msg>
-<arg>xpath=//input[@id='mat-input-2']</arg>
-<arg>Jiwandoni</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-11T15:41:59.615216" elapsed="0.114960"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-07-11T15:41:59.730613" level="INFO">Clicking element 'xpath=//input[@id='mat-input-3']'.</msg>
-<arg>xpath=//input[@id='mat-input-3']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-11T15:41:59.730408" elapsed="0.069337"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-07-11T15:41:59.800355" level="INFO">Typing text 'Mulyadi' into text field 'xpath=//input[@id='mat-input-3']'.</msg>
-<arg>xpath=//input[@id='mat-input-3']</arg>
-<arg>Mulyadi</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-11T15:41:59.799989" elapsed="0.088853"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-07-11T15:41:59.889312" level="INFO">Clicking element 'xpath=//input[@id='mat-input-5']'.</msg>
-<arg>xpath=//input[@id='mat-input-5']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-11T15:41:59.889068" elapsed="0.070573"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-07-11T15:41:59.960083" level="INFO">Typing text 'Mulyadi.J@sharklasers.com' into text field 'xpath=//input[@id='mat-input-5']'.</msg>
-<arg>xpath=//input[@id='mat-input-5']</arg>
-<arg>Mulyadi.J@sharklasers.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-11T15:41:59.959870" elapsed="0.085324"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-07-11T15:42:00.045685" level="INFO">Clicking element 'xpath=//*[contains(text(), 'Family role')]'.</msg>
-<arg>xpath=//*[contains(text(), 'Family role')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-11T15:42:00.045428" elapsed="0.066383"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>xpath=//*[contains(text(), 'father')]</arg>
-<arg>timeout=5s</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-07-11T15:42:00.112202" elapsed="0.019029"/>
+<status status="PASS" start="2025-07-15T16:38:48.614920" elapsed="0.057236"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-07-11T15:42:01.132320" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
+<msg time="2025-07-15T16:38:51.673011" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-07-11T15:42:00.131553" elapsed="1.000920"/>
+<status status="PASS" start="2025-07-15T16:38:48.672307" elapsed="3.000889"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-07-11T15:42:01.132970" level="INFO">Clicking element 'xpath=//*[contains(text(), 'father')]'.</msg>
-<arg>xpath=//*[contains(text(), 'father')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-11T15:42:01.132702" elapsed="0.057235"/>
+<status status="PASS" start="2025-07-15T16:38:48.614548" elapsed="3.058805"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-07-11T15:42:02.190547" level="INFO">Slept 1 second.</msg>
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-07-11T15:42:01.190132" elapsed="1.000561"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-07-11T15:42:02.191384" level="INFO">Clicking element 'xpath=//*[contains(text(), 'married')]'.</msg>
-<arg>xpath=//*[contains(text(), 'married')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-11T15:42:02.190910" elapsed="0.061003"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-07-11T15:42:02.252247" level="INFO">Clicking element 'xpath=//input[@id='mat-input-15']'.</msg>
-<arg>xpath=//input[@id='mat-input-15']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-11T15:42:02.252069" elapsed="0.066440"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-07-11T15:42:02.318867" level="INFO">Typing text '10071981' into text field 'xpath=//input[@id='mat-input-15']'.</msg>
-<arg>xpath=//input[@id='mat-input-15']</arg>
-<arg>10071981</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-11T15:42:02.318690" elapsed="0.058274"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-07-11T15:42:04.377442" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-07-15T16:38:53.674041" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-07-11T15:42:02.377122" elapsed="2.000428"/>
+<status status="PASS" start="2025-07-15T16:38:51.673678" elapsed="2.000500"/>
 </kw>
+<kw name="Create_educator">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-07-11T15:42:04.377866" level="INFO">Clicking element 'xpath=//form/div[2]/button/span[2]'.</msg>
-<arg>xpath=//form/div[2]/button/span[2]</arg>
+<msg time="2025-07-15T16:38:53.675231" level="INFO">Clicking element 'xpath=//*[contains(text(), 'CREATE EDUCATOR')]'.</msg>
+<arg>xpath=//*[contains(text(), 'CREATE EDUCATOR')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-11T15:42:04.377700" elapsed="0.064003"/>
+<status status="PASS" start="2025-07-15T16:38:53.674987" elapsed="0.108511"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-07-11T15:42:07.442439" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-07-15T16:38:56.784300" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-07-11T15:42:04.441862" elapsed="3.000719"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-07-11T15:42:07.443034" level="INFO">Clicking element 'xpath=//beed-add-learner-parent-dialog/div/div/mat-form-field/div/div/div[2]/input'.</msg>
-<arg>xpath=//beed-add-learner-parent-dialog/div/div/mat-form-field/div/div/div[2]/input</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-11T15:42:07.442788" elapsed="0.055908"/>
+<status status="PASS" start="2025-07-15T16:38:53.783742" elapsed="3.000808"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-07-11T15:42:07.499312" level="INFO">Typing text 'Andy Jack' into text field 'xpath=//beed-add-learner-parent-dialog/div/div/mat-form-field/div/div/div[2]/input'.</msg>
-<arg>xpath=//beed-add-learner-parent-dialog/div/div/mat-form-field/div/div/div[2]/input</arg>
-<arg>Andy Jack</arg>
+<msg time="2025-07-15T16:38:56.785193" level="INFO">Typing text 'Thomas' into text field 'xpath=//*[@id='mat-input-2']'.</msg>
+<arg>xpath=//*[@id='mat-input-2']</arg>
+<arg>Thomas</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-11T15:42:07.498929" elapsed="0.061895"/>
+<status status="PASS" start="2025-07-15T16:38:56.784847" elapsed="0.082418"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-15T16:38:56.867889" level="INFO">Typing text 'Mulyadi' into text field 'xpath=//*[@id='mat-input-3']'.</msg>
+<arg>xpath=//*[@id='mat-input-3']</arg>
+<arg>Mulyadi</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-15T16:38:56.867602" elapsed="0.074788"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-15T16:38:56.942706" level="INFO">Typing text 'Mulyadi.T@sharklasers.com' into text field 'xpath=//*[@id='mat-input-5']'.</msg>
+<arg>xpath=//*[@id='mat-input-5']</arg>
+<arg>Mulyadi.T@sharklasers.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-15T16:38:56.942543" elapsed="0.113846"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-15T16:38:57.056768" level="INFO">Typing text '19091991' into text field 'xpath=//*[@id='mat-input-13']'.</msg>
+<arg>xpath=//*[@id='mat-input-13']</arg>
+<arg>19091991</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-15T16:38:57.056555" elapsed="0.116733"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-07-11T15:42:10.561855" level="INFO">Slept 3 seconds.</msg>
-<arg>3s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-07-11T15:42:07.560984" elapsed="3.001015"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-07-11T15:42:10.562417" level="INFO">Clicking element 'xpath=//html/body/div[3]/div[4]/div/mat-dialog-container/div/div/beed-add-learner-parent-dialog/mat-dialog-content/mat-card'.</msg>
-<arg>xpath=//html/body/div[3]/div[4]/div/mat-dialog-container/div/div/beed-add-learner-parent-dialog/mat-dialog-content/mat-card</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-11T15:42:10.562209" elapsed="0.055210"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-07-11T15:42:14.617810" level="INFO">Slept 4 seconds.</msg>
+<msg time="2025-07-15T16:39:01.174062" level="INFO">Slept 4 seconds.</msg>
 <arg>4s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-07-11T15:42:10.617575" elapsed="4.000513"/>
+<status status="PASS" start="2025-07-15T16:38:57.173524" elapsed="4.000651"/>
 </kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-07-11T15:42:14.618932" level="INFO">Clicking element 'xpath=//span[(text() = 'SAVE' or . = 'SAVE')]'.</msg>
-<arg>xpath=//span[(text() = 'SAVE' or . = 'SAVE')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-11T15:42:14.618470" elapsed="0.055322"/>
-</kw>
-<status status="PASS" start="2025-07-11T15:41:59.434681" elapsed="15.239258"/>
+<status status="PASS" start="2025-07-15T16:38:53.674616" elapsed="7.499659"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-07-11T15:42:14.796306" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-103.png"&gt;&lt;img src="selenium-screenshot-103.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-07-15T16:39:01.297014" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-122.png"&gt;&lt;img src="selenium-screenshot-122.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-07-11T15:42:14.674339" elapsed="0.122066"/>
+<status status="PASS" start="2025-07-15T16:39:01.174607" elapsed="0.122512"/>
 </kw>
-<status status="PASS" start="2025-07-11T15:41:44.229685" elapsed="30.567002"/>
+<status status="PASS" start="2025-07-15T16:38:34.529648" elapsed="26.767790"/>
 </test>
-<status status="PASS" start="2025-07-11T15:41:44.004527" elapsed="30.792858"/>
+<status status="PASS" start="2025-07-15T16:38:34.313643" elapsed="26.984550"/>
 </suite>
 <statistics>
 <total>
@@ -258,7 +149,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="Create Parents" id="s1" pass="1" fail="0" skip="0">Create Parents</stat>
+<stat name="Create Educator" id="s1" pass="1" fail="0" skip="0">Create Educator</stat>
 </suite>
 </statistics>
 <errors>
