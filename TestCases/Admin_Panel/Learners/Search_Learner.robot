@@ -10,9 +10,10 @@ ${url}        https://test3-fairview.beed.world/
 ViewPageAdminPanel
     LoginToApplication
     AdminPanel
-    sleep    3 s
-    ViewPageCourses
-    sleep    2s
+    sleep    5s
+    View_Learners
+    sleep    5s
+    searchlearners
     Capture Page Screenshot
     Close Browser
 
@@ -23,18 +24,18 @@ LoginToApplication
     Maximize Browser Window
     sleep   2s
     Click Element   xpath=//*[@id="Username"]
-    Input Text      xpath=//*[@id="Username"]    satrio.wicaksono17@sharklasers.com
+    Input Text      xpath=//*[@id="Username"]    admin@acd.com
     click element   xpath=//*[@id="Password"]
-    Input Text      xpath=//*[@id="Password"]   Satrio99_
+    Input Text      xpath=//*[@id="Password"]   @@Password123@@
     Click Element    xpath=/html/body/section/div/div/div[2]/div/div/div/div/div[2]/div/div/div/form/fieldset/div[3]/button
     sleep    3s
 
-
 AdminPanel
-     Click Element   xpath=//*[contains(text(), 'Admin panel')]
+    Click Element   xpath=//*[contains(text(), 'Admin panel')]
 
-ViewPageCourses
-    Click Element  xpath=//html/body/app-root/app-layout/beed-side-bar/mat-sidenav-container/mat-sidenav/div/div[2]/div[7]
+View_Learners
+    click element   xpath=//html/body/app-root/app-layout/beed-side-bar/mat-sidenav-container/mat-sidenav/div/div[2]/div[2]
 
-
-
+SearchLearners
+    input text      xpath=//*[@id='mat-input-1']    Jessie
+    sleep    3s

@@ -9,10 +9,11 @@ ${url}        https://test3-fairview.beed.world/
 *** Test Cases ***
 ViewPageAdminPanel
     LoginToApplication
-    AdminPanel
-    sleep    3 s
-    ViewPageCourses
     sleep    2s
+    AdminPanel
+    sleep    3s
+    View_Timetable
+    sleep    3s
     Capture Page Screenshot
     Close Browser
 
@@ -29,12 +30,10 @@ LoginToApplication
     Click Element    xpath=/html/body/section/div/div/div[2]/div/div/div/div/div[2]/div/div/div/form/fieldset/div[3]/button
     sleep    3s
 
-
 AdminPanel
-     Click Element   xpath=//*[contains(text(), 'Admin panel')]
+   Click Element   xpath=//*[contains(text(), 'Admin panel')]
 
-ViewPageCourses
-    Click Element  xpath=//html/body/app-root/app-layout/beed-side-bar/mat-sidenav-container/mat-sidenav/div/div[2]/div[7]
-
+View_Timetable
+   click element   xpath=//html/body/app-root/app-layout/beed-side-bar/mat-sidenav-container/mat-sidenav/div/div[2]/div[5]
 
 
