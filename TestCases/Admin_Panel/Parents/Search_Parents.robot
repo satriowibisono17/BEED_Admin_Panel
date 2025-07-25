@@ -7,7 +7,7 @@ ${browser}    chrome
 ${url}        https://test3-fairview.beed.world/
 
 *** Test Cases ***
-ViewPageAdminPanel
+Search_Data_Parents
     LoginToApplication
     AdminPanel
     sleep    3 s

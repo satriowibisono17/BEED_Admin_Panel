@@ -6,7 +6,7 @@ Library    SeleniumLibrary
 ${browser}    chrome
 ${url}        https://test3-fairview.beed.world/
 *** Test Cases ***
-ViewPageAdminPanel
+DownloadFormatTemplate
     LoginToApplication
     AdminPanel
     sleep    3 s

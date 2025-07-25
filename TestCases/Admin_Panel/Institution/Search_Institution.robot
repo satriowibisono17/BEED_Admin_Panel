@@ -7,7 +7,7 @@ ${browser}    chrome
 ${url}        https://test3-fairview.beed.world/
 
 *** Test Cases ***
-ViewPageAdminPanel
+SearchDataInstitution
     LoginToApplication
     AdminPanel
     sleep    5s
@@ -28,14 +28,14 @@ LoginToApplication
     Input Text      xpath=//*[@id="Username"]    admin@acd.com
     click element   xpath=//*[@id="Password"]
     Input Text      xpath=//*[@id="Password"]   @@Password123@@
-    Click Element    xpath=/html/body/section/div/div/div[2]/div/div/div/div/div[2]/div/div/div/form/fieldset/div[3]/button
+    Click Button    xpath=//*[contains(text(), 'Login')]
     sleep    3s
 
 AdminPanel
     Click Element   xpath=//*[contains(text(), 'Admin panel')]
 
 ViewInstitution
-    click element   xpath=//html/body/app-root/app-layout/beed-side-bar/mat-sidenav-container/mat-sidenav/div/div[2]/div[9]/a/span
+    click element   xpath=//div[(text() = 'Institutions' or . = 'Institutions')]
 
 SearchInstitution
     click element   xpath=//*[@id="mat-input-1"]
